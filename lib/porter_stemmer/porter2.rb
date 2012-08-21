@@ -101,7 +101,7 @@ module PorterStemmer::Porter2
     word.gsub! /^'/, ''
     word.gsub! /^y/, 'Y'
 
-    region1, region2 = Stemmer::find_regions(word)
+    region1, region2 = self.find_regions(word)
 
     # step 0
     word = $` if word =~ /('s'|'s|')$/
@@ -132,7 +132,7 @@ module PorterStemmer::Porter2
         word += 'e'
       elsif word =~ DOUBLE
         word.chop!
-      elsif Stemmer::short?(word, region1)
+      elsif self.short?(word, region1)
         word += 'e'
       end
     end
