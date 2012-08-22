@@ -33,6 +33,10 @@ class Porter1Test < Test::Unit::TestCase
     assert_not_nil "crepuscular" =~ PorterStemmer::Porter1::MGR1
   end
 
+  # reads two input files, one containing sample input words
+  # and the other containing the stems for these words. 
+  # this test checks whether the Porter1 implementation stems
+  # the input words to the given stems
   def test_stemming
     data = []
     current_dir = File.expand_path(File.dirname(__FILE__))
