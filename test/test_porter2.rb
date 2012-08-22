@@ -23,6 +23,19 @@ class Porter2Test < Test::Unit::TestCase
     assert_equal [5, 7], PorterStemmer::Porter2.find_regions("arsenic")
   end
 
+  # checks whether some words are recognized as being short
+  def short
+    # this are short words
+    assert PorterStemmer::Porter2.short?("bed")
+    assert PorterStemmer::Porter2.short?("shed")
+    assert PorterStemmer::Porter2.short?("shred")
+
+    # this are not short words
+    assert !PorterStemmer::Porter2.short?("bead")
+    assert !PorterStemmer::Porter2.short?("embed")
+    assert !PorterStemmer::Porter2.short?("beds")
+  end
+
   # reads an input file containing a word and its stem, one per line.
   # the test checks whether the Porter2 implementation stems the words properly
   def test_stemming
