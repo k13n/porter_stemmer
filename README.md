@@ -19,8 +19,9 @@ Or install it yourself as:
 ## Usage
 
 You can use PorterStemmer as follows:
-PorterStemmer::Porter1.stem("generalization")
-PorterStemmer::Porter2.stem("generalization")
+    
+    PorterStemmer::Porter1.stem("generalization")
+    PorterStemmer::Porter2.stem("generalization")
 
 ## Contributing
 
