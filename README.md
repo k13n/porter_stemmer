@@ -23,6 +23,10 @@ You can use PorterStemmer as follows:
     PorterStemmer::Porter1.stem("generalization")
     PorterStemmer::Porter2.stem("generalization")
 
+Since usually the Porter 2 algorithm is used it can also be used as follows
+
+    PorterStemmer.stem("generalization")
+
 ## Contributing
 
 1. Fork it
