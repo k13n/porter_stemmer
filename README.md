@@ -1,7 +1,6 @@
 # PorterStemmer
 
-PorterStemmer implements the porter stemming algorithm in
-version 1 and version 2.
+PorterStemmer implements the porter stemming algorithm in version 1 and version 2.
 
 ## Installation
 
