@@ -1,6 +1,7 @@
 module PorterStemmer::Porter2
 
   EXCEPTIONAL_STEMS = {
+    'kinkajou'   => 'kinkajou',
     'skis'   => 'ski',
     'skies'  => 'sky',
     'dying'  => 'die',
